@@ -1,0 +1,45 @@
+{
+    "name": "beebmx/pipeline",
+    "description": "Pipeline your code",
+    "keywords": ["pipes", "pipeline"],
+    "license" : "MIT",
+    "version": "1.0.0",
+    "authors": [
+        {
+            "name": "Fernando Gutierrez",
+            "homepage": "https://beeb.mx"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/beebmx/pipeline/issues",
+        "source": "https://github.com/beebmx/pipeline"
+    },
+    "require": {
+        "php": "^8.2"
+    },
+    "require-dev": {
+        "pestphp/pest": "^2.0",
+        "laravel/pint": "^1.16",
+        "spatie/ray": "^1.41"
+    },
+    "autoload": {
+        "psr-4": {
+            "Beebmx\\Pipeline\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    },
+    "scripts": {
+        "test": "./vendor/bin/pest"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
